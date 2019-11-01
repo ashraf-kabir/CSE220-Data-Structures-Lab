@@ -1,4 +1,4 @@
-package assignment04;
+package assignment04.task02;
 
 public interface Queue {
 	// The number of items in the queue

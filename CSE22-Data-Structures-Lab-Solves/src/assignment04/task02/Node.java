@@ -1,4 +1,4 @@
-package assignment04;
+package assignment04.task02;
 
 public class Node {
 	Object val;
