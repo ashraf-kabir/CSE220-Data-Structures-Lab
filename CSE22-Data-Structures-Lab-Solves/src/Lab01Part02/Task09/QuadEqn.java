@@ -1,4 +1,4 @@
-package task09;
+package Lab01Part02.Task09;
 
 public class QuadEqn {
 
