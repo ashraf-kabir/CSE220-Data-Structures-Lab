@@ -2,8 +2,7 @@ package assignment02;
 
 public class DoublyList{
     public Node head;
-    
-    
+
     /* First Constructor:
      * Creates a linked list using the values from the given array. head will refer
      * to the Node that contains the element from a[0]
