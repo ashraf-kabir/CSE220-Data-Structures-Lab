@@ -13,10 +13,10 @@ public class WaitingRoomManagement {
 	public WaitingRoomManagement(int selection) {
 		if (selection == 1) {
 			System.out.println("Making ArrayQueue");
-			aq = new ArrayQueue();
+			aq = (Queue) new ArrayQueue();
 		} else if (selection == 2) {
 			System.out.println("Making Linked list");
-			aq = new ListQueue();
+			aq = (Queue) new ListQueue();
 		}
 	}
 	// }
