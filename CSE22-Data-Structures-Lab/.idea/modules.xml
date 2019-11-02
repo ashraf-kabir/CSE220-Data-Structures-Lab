@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CSE22-Data-Structures-Lab-Solves.iml" filepath="$PROJECT_DIR$/CSE22-Data-Structures-Lab-Solves.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CSE22-Data-Structures-Lab.iml" filepath="$PROJECT_DIR$/CSE22-Data-Structures-Lab.iml" />
     </modules>
   </component>
 </project>
