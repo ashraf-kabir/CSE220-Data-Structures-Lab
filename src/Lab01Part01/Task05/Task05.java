@@ -2,7 +2,9 @@ package Lab01Part01.Task05;
 
 import java.util.Scanner;
 
-public class Task05 {        // check 0-9 input and count each how many times
+// take input 0-9 then count frequency of integer in array
+
+public class Task05 {
 
 	public static void main(String[] args) {
 

@@ -2,7 +2,9 @@ package Lab01Part01.Task06;
 
 import java.util.*;
 
-public class Task06 {         // Palindrome check
+// Palindrome check
+
+public class Task06 {
 
 	public static void main(String[] args) {
 

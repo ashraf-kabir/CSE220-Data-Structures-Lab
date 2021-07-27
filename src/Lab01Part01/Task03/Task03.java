@@ -2,7 +2,9 @@ package Lab01Part01.Task03;
 
 import java.util.Scanner;
 
-public class Task03 {       // reverse array and even number print
+// print max to min of array and even numbers
+
+public class Task03 {
 
 	public static void main(String[] args) {
 
@@ -10,9 +12,9 @@ public class Task03 {       // reverse array and even number print
 
 		int[] n = new int[5];
 		int temp;
-		for (int a=0; a<n.length; a++) {
-			System.out.println("Enter number: ");
-			n[a] = sc.nextInt();
+		for (int i=0; i<n.length; i++) {
+			System.out.println("Enter number " + i + ":");
+			n[i] = sc.nextInt();
 		}
 
 		for (int a=0; a<n.length; a++) {
@@ -25,10 +27,13 @@ public class Task03 {       // reverse array and even number print
 			}
 		}
 
+		System.out.print("Max to min: ");
 		for (int d=0; d<n.length; d++) {
-			System.out.printf(n[d]+", ");
+			System.out.print(n[d]+", ");
 		}
 
+		System.out.println();
+		System.out.print("Even numbers: ");
 		for (int k=0; k<n.length; k++) {
 			if (n[k]%2==0) {
 				System.out.print(n[k]+" ");
