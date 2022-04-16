@@ -6,6 +6,12 @@ import java.util.Scanner;
 
 public class Task03 {
 
+	private static String formatResultStr(String str) {
+		String formattedStr = str.substring(0, str.length() - 2) + ".";
+		formattedStr = formattedStr.replaceFirst(",(?=[^,]+$)", " &");
+		return formattedStr;
+	}
+
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
@@ -27,19 +33,23 @@ public class Task03 {
 			}
 		}
 
+		String str = "";
 		System.out.print("Max to min: ");
 		for (int d=0; d<n.length; d++) {
-			System.out.print(n[d]+", ");
+//			System.out.print(n[d]+", ");
+			str += n[d] + ", ";
 		}
+		System.out.println(formatResultStr(str));
 
-		System.out.println();
+		String evenStr = "";
 		System.out.print("Even numbers: ");
 		for (int k=0; k<n.length; k++) {
 			if (n[k]%2==0) {
-				System.out.print(n[k]+" ");
+//				System.out.print(n[k]+" ");
+				evenStr += n[k] + ", ";
 			}
 		}
-		System.out.println();
+		System.out.println(formatResultStr(evenStr));
 	}
 
 }

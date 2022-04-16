@@ -2,7 +2,9 @@ package Lab01Part01.Task06;
 
 import java.util.*;
 
-// Palindrome check
+/**
+ * take input of 5 numbers in array and check palindrome-> 1 2 3 2 1
+ */
 
 public class Task06 {
 
@@ -13,22 +15,22 @@ public class Task06 {
 		int[] arr = new int[5];
 
 		boolean flag = false;
-		for (int a=0; a<arr.length; a++) {
+		for (int i=0; i<arr.length; i++) {
 			System.out.println("Enter number: ");
-			arr[a] = sc.nextInt();
+			arr[i] = sc.nextInt();
 		}
 		for (int i=0; i<arr.length; i++) {
 			if (arr[i]==arr[arr.length-1-i]) {
-				flag=true;
+				flag = true;
 			} else {
-				flag=false;
+				flag = false;
 				break;
 			}
 		}
-		if (flag==true) {
+		if (flag) {
 			System.out.println("Palindrome");
 		} else {
-			System.out.println("Not Palindrome");
+			System.out.println("Not palindrome");
 		}
 	}
 

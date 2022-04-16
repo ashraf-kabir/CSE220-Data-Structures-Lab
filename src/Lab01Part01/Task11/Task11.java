@@ -8,26 +8,26 @@ public class Task11 {
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Enter number/s: ");
+		System.out.println("Enter a number: ");
 		int num = sc.nextInt();
 
-		System.out.println(allDigitsOdd(num));
+		System.out.println(checkAllDigitsAreOdd(num));
 	}
 
-	public static boolean allDigitsOdd(int n) {
+	public static boolean checkAllDigitsAreOdd(int n) {
 
-		boolean test = true;
+		boolean check = true;
 
 		for (int i=n; i>0; i/=10) {
 			int x=i%10;
 			if (x%2==0) {
-				test=false;
+				check=false;
 				break;
 			} else {
-				test=true;
+				check=true;
 			}
 		}
-		return test;
+		return check;
 	}
 
 }

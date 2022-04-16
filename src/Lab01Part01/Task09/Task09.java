@@ -1,6 +1,10 @@
 package Lab01Part01.Task09;
 
-import java.util.*;
+import java.util.Scanner;
+
+/**
+ * take 10 integers in array and square them individually and print
+ */
 
 public class Task09 {
 
@@ -11,9 +15,18 @@ public class Task09 {
 	}
 
 	public static void printMethod(int[] a) {
+		String str = "";
 		for (int i=0; i<a.length; i++) {
-			System.out.print(a[i] + ", ");
+			str += a[i] + ", ";
+//			System.out.print(a[i] + ", ");
 		}
+		System.out.println(formatResultStr(str));
+	}
+
+	private static String formatResultStr(String str) {
+		String formattedStr = str.substring(0, str.length() - 2) + ".";
+		formattedStr = formattedStr.replaceFirst(",(?=[^,]+$)", " &");
+		return formattedStr;
 	}
 
 	public static void main(String[] args) {
@@ -28,9 +41,9 @@ public class Task09 {
 		}
 
 		Task09.squareMethod(arr);
-		System.out.printf("\n");
+		System.out.print("\n");
 		Task09.printMethod(arr);
-		System.out.printf("\n");
+		System.out.print("\n");
 	}
 
 }

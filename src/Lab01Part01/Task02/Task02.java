@@ -6,6 +6,12 @@ import java.util.Scanner;
 
 public class Task02 {
 
+	private static String formatResultStr(String str) {
+		String formattedStr = str.substring(0, str.length() - 2) + ".";
+		formattedStr = formattedStr.replaceFirst(",(?=[^,]+$)", " &");
+		return formattedStr;
+	}
+
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
@@ -33,9 +39,12 @@ public class Task02 {
 		n[maxLoc] = n[minLoc];
 		n[minLoc] = temp;
 
+		String str = "";
 		for (int j=0; j<n.length; j++) {
-			System.out.print(n[j]+" ");
+//			System.out.print(n[j]+" ");
+			str += n[j] + ", ";
 		}
+		System.out.println(formatResultStr(str));
 
 	}
 

@@ -10,7 +10,7 @@ public class Task04 {
 
 		try {
 			int x, n = sc.nextInt();
-			int a[] = new int[n];
+			int[] a = new int[n];
 			a[5] = 99;
 			x = n / 0;
 			// System.out.println("Nothing will print");

@@ -11,16 +11,13 @@ public class Task03 {
 		int x, n = sc.nextInt();
 
 		try {
-			int a[] = new int[n];
+			int[] a = new int[n];
 			a[5] = 99;
 			x = n / 0;
 			// System.out.println("Nothing will print");
-		} catch (ArithmeticException e) {
+		} catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
 			// System.out.println(e);
-		} catch (ArrayIndexOutOfBoundsException e) {
-			// System.out.println(e);
-		}
-		finally {
+		} finally {
 			System.out.println("THE END");
 		}
 	}
