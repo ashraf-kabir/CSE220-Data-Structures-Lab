@@ -18,16 +18,22 @@ public class RotateTest {
 		Rotate r = new Rotate();
 
 		b = r.rotateLeft(a, p);
+		String rLeftStr = "";
 		for (int e = 0; e < b.length; e++) {
-			System.out.print(b[e] + " ");
+			rLeftStr += b[e] + " ";
 		}
-		System.out.println();
+		printResult(rLeftStr);
 
 		c = r.rotateRight(a, p);
+		String rRightStr = "";
 		for (int e = 0; e < c.length; e++) {
-			System.out.print(c[e] + " ");
+			rRightStr += c[e] + " ";
 		}
-		System.out.println();
+		printResult(rRightStr);
+	}
+
+	private static void printResult(String str) {
+		System.out.println(str.substring(0, str.length() - 1));
 	}
 
 }

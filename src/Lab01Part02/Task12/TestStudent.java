@@ -3,7 +3,7 @@ package Lab01Part02.Task12;
 public class TestStudent {
 
 	public static void printShout(Student s) {
-		System.out.println("------------------");
+		System.out.println("----------------------------");
 		System.out.println(s.msg);
 		System.out.println(s.shout());
 	}

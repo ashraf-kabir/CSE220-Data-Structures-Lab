@@ -5,10 +5,10 @@ public class BankAccount {
 	public String name, address, accountID;
 	public double balance;
 
-	public BankAccount(String n, String add, String aId, double b) {
+	public BankAccount(String n, String addr, String accId, double b) {
 		name = n;
-		address = add;
-		accountID = aId;
+		address = addr;
+		accountID = accId;
 		balance = b;
 	}
 

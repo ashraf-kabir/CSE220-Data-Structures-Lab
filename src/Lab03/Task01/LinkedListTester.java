@@ -3,7 +3,7 @@ package Lab03.Task01;
 public class LinkedListTester{
 	public static void main(String [] args){
 	    
-		System.out.println("\n/////  Test 01  /////");
+		System.out.println("\n#######  Test 01  #######");
 	    Object [] a1 = {10,20,30,40};
 	    LinkedList h1 = new LinkedList(a1); // Creates a linked list using the values from the array
 	    // head will refer to the Node that contains the element from a[0]
@@ -11,19 +11,19 @@ public class LinkedListTester{
 	    h1.printList(); // This should print: 10,20,30,40. 
 	    System.out.println(h1.countNode()); // This should print: 4
 	    
-	    System.out.println("\n/////  Test 03  /////");
+	    System.out.println("\n#######  Test 03  #######");
 	    // returns the reference of the Node at the given index. For invalid idx return null.
 	    Node myNode = h1.nodeAt(1);
 	    System.out.println(myNode.element); // This should print: 20. In case of invalid index This will
 	    // generate nullPointerException.
 	    
-	    System.out.println("\n/////  Test 04  /////");
+	    System.out.println("\n#######  Test 04  #######");
 	    // returns the element of the Node at the given index. For invalid idx return null.
 	    Object val = h1.get(2);
 	    System.out.println(val); // This should print: 30. In case of invalid index This will print null.
 	    
 	    
-	    System.out.println("\n/////  Test 05  /////");
+	    System.out.println("\n#######  Test 05  #######");
 	    
 	    /* updates the element of the Node at the given index. 
 	     * Returns the old element that was replaced. For invalid index return null.
@@ -34,20 +34,20 @@ public class LinkedListTester{
 	    System.out.println(h1.set(15,85)); // This should print: null
 	    h1.printList(); // This should print: 10,85,30,40. 
 	    
-	    System.out.println("\n/////  Test 06  /////");
+	    System.out.println("\n#######  Test 06  #######");
 	    // returns the index of the Node containing the given element.
 	    // if the element does not exist in the List, return -1.
 	    int index = h1.indexOf(40);
 	    System.out.println(index); // This should print: 3. In case of element that 
-	    //doesn't exists in the list this will print -1.
+	    //doesn't exist in the list this will print -1.
 	    
-	    System.out.println("\n/////  Test 07  /////");
+	    System.out.println("\n#######  Test 07  #######");
 	    // returns true if the element exists in the List, return false otherwise.
 	    boolean ask = h1.contains(40);
 	    System.out.println(ask); // This should print: true.
 	    
 	    
-	    System.out.println("\n/////  Test 08  /////");
+	    System.out.println("\n#######  Test 08  #######");
 	    Object [] a2 = {10,20,30,40,50,60,70};
 	    LinkedList h2 = new LinkedList(a2); // uses the first constructor: LinkedList(Object [] a)
 	    h2.printList(); // This should print: 10,20,30,40,50,60,70.  
@@ -56,7 +56,7 @@ public class LinkedListTester{
 	    LinkedList h3 = new LinkedList(copyH); // uses the second constructor: LinkedList(Node h)
 	    h3.printList(); // This should print: 10,20,30,40,50,60,70.  
 	    
-	    System.out.println("\n/////  Test 09  /////");
+	    System.out.println("\n#######  Test 09  #######");
 	    Object [] a4 = {10,20,30,40,50};
 	    LinkedList h4 = new LinkedList(a4); // uses the first constructor: LinkedList(Object [] a)
 	    h4.printList(); // This should print: 10,20,30,40,50.  
@@ -65,7 +65,7 @@ public class LinkedListTester{
 	    LinkedList h5 = new LinkedList(revH); // uses the second constructor: LinkedList(Node h)
 	    h5.printList(); // This should print: 50,40,30,20,10.  
 	    
-	    System.out.println("\n/////  Test 10  /////");
+	    System.out.println("\n#######  Test 10  #######");
 	    Object [] a6 = {10,20,30,40};
 	    LinkedList h6 = new LinkedList(a6); // uses the first constructor: LinkedList(Object [] a)
 	    h6.printList(); // This should print: 10,20,30,40.  
@@ -80,7 +80,7 @@ public class LinkedListTester{
 	    
 	    
 	    
-	    System.out.println("\n/////  Test 11  /////");
+	    System.out.println("\n#######  Test 11  #######");
 	    Object [] a7 = {10,20,30,40,50,60,70};
 	    LinkedList h7 = new LinkedList(a7); // uses the first constructor: LinkedList(Object [] a)
 	    h7.printList(); // This should print: 10,20,30,40,50,60,70.  
@@ -96,7 +96,7 @@ public class LinkedListTester{
 	    h7.printList(); // This should print: 20,30,40,60. 
 	    
 	    
-	    System.out.println("\n/////  Test 11  /////");
+	    System.out.println("\n#######  Test 11  #######");
 	    Object [] a8 = {10,20,30,40};
 	    LinkedList h8 = new LinkedList(a8); // uses the first constructor: LinkedList(Object [] a)
 	    h8.printList(); // This should print: 10,20,30,40.  
@@ -106,7 +106,7 @@ public class LinkedListTester{
 	    h8.printList(); // This should print: 20,30,40,10.  
 	    
 	    
-	    System.out.println("\n/////  Test 12  /////");
+	    System.out.println("\n#######  Test 12  #######");
 	    Object [] a9 = {10,20,30,40};
 	    LinkedList h9 = new LinkedList(a9); // uses the first constructor: LinkedList(Object [] a)
 	    h9.printList(); // This should print: 10,20,30,40.  
